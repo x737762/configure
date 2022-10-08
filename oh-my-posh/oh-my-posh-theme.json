@@ -6,31 +6,16 @@
       "segments": [
         {
           "foreground": "#3A86FF",
-          "properties": {
-            "template": "{{ if .WSL }}WSL at {{ end }}{{.Icon}} "
-          },
           "style": "plain",
+          "template": "{{ if .WSL }}WSL at {{ end }}{{.Icon}} ",
           "type": "os"
         },
         {
           "background": "#242424",
           "foreground": "#f1184c",
           "powerline_symbol": "\ue0b0",
-          "properties": {
-            "display_host": false,
-            "template": " {{ if .SSHSession }}\uf817 {{ end }}{{ .UserName }}"
-          },
           "style": "powerline",
-          "type": "session"
-        },
-        {
-          "background": "#242424",
-          "foreground": "#f1184c",
-          "powerline_symbol": "\ue0b0",
-          "properties": {
-            "template": "- root \uf0e7"
-          },
-          "style": "powerline",
+          "template": "- root \uf0e7",
           "type": "root"
         },
         {
@@ -39,10 +24,10 @@
           "powerline_symbol": "\ue0b0",
           "properties": {
             "folder_separator_icon": "/",
-            "style": "full",
-            "template": "\ue5ff {{ .Path }} "
+            "style": "full"
           },
           "style": "powerline",
+          "template": "\ue5ff {{ .Path }} ",
           "type": "path"
         },
         {
@@ -56,10 +41,10 @@
           "properties": {
             "fetch_stash_count": true,
             "fetch_status": true,
-            "fetch_upstream_icon": true,
-            "template": "<#7a7a7a>\ue0b1 </>{{ .HEAD }} {{ .BranchStatus }}{{ if .Working.Changed }} \uf044 <#E84855>{{ .Working.String }}</>{{ end }}{{ if and (.Staging.Changed) (.Working.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 <#2FDA4E>{{ .Staging.String }}</>{{ end }}{{ if gt .StashCount 0}} \uf692 {{ .StashCount }}{{ end }}{{ if gt .WorktreeCount 0}} \uf1bb {{ .WorktreeCount }}{{ end }} "
+            "fetch_upstream_icon": true
           },
           "style": "diamond",
+          "template": "<#7a7a7a>\ue0b1 </>{{ .HEAD }} {{ .BranchStatus }}{{ if .Working.Changed }} \uf044 <#E84855>{{ .Working.String }}</>{{ end }}{{ if and (.Staging.Changed) (.Working.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 <#2FDA4E>{{ .Staging.String }}</>{{ end }}{{ if gt .StashCount 0}} \uf692 {{ .StashCount }}{{ end }}{{ if gt .WorktreeCount 0}} \uf1bb {{ .WorktreeCount }}{{ end }} ",
           "type": "git"
         },
         {
@@ -68,10 +53,10 @@
           "foreground": "#242424",
           "powerline_symbol": "\ue0b0",
           "properties": {
-            "always_enabled": true,
-            "template": " \ufc8d{{ if gt .Code 0 }}\uf00d{{ else }}\uf42e{{ end }} "
+            "always_enabled": true
           },
           "style": "powerline",
+          "template": " \ufc8d{{ if gt .Code 0 }}\uf00d{{ else }}\uf42e{{ end }} ",
           "type": "exit"
         }
       ],
@@ -84,19 +69,14 @@
           "background": "#2f2f2f",
           "foreground": "#fafafa",
           "leading_diamond": "\ue0b2",
-          "properties": {
-            "template": ""
-          },
           "style": "diamond",
           "type": "text"
         },
         {
           "background": "#2f2f2f",
           "foreground": "#6CA35E",
-          "properties": {
-            "template": " \ue718 {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }}<#7a7a7a> \ue0b3</>"
-          },
           "style": "diamond",
+          "template": " \ue718 {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }}<#7a7a7a> \ue0b3</>",
           "type": "node"
         },
         {
@@ -104,10 +84,10 @@
           "foreground": "#FFBB00",
           "powerline_symbol": "\ue0b0",
           "properties": {
-            "template": "{{ .CurrentDate | date .Format }} ",
             "time_format": "2006-01-02 15:04:05"
           },
           "style": "powerline",
+          "template": "{{ .CurrentDate | date .Format }} ",
           "type": "time"
         }
       ],
@@ -118,16 +98,14 @@
       "newline": true,
       "segments": [
         {
-          "foreground": "#f1184c",
-          "properties": {
-            "template": "\u279c "
-          },
+          "foreground": "#FFBB00",
           "style": "plain",
+          "template": "\u279c ",
           "type": "text"
         }
       ],
       "type": "prompt"
     }
   ],
-  "version": 1
+  "version": 2
 }
